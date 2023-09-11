@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{89b26201-82e2-971f-d166-6a6107fc964f}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GD.DCSGovernment.Shared</RootNamespace>
+    <AssemblyName>GD.DCSGovernment.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DirRX.DCTSIntegration\Module.g.cs" />
+    <Compile Include="DirRX.DCTSIntegration\ModuleConstants.cs" />
+    <Compile Include="DirRX.DCTSIntegration\ModuleSharedFunctions.cs" />
+    <Compile Include="DirRX.DCTSIntegration\ModuleStructures.cs" />
+    <Compile Include="DirRX.DCTSIntegration\ModuleStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformers.g.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetter.g.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterConstants.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterHandlers.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterSharedFunctions.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterStructures.cs" />
+    <Compile Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+      <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
+      <Name>DirRX.DCTSIntegration.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DirRX.DCTSIntegration\Module.mtd" />
+    <EmbeddedResource Include="DirRX.DCTSIntegration\Module.resx" />
+    <EmbeddedResource Include="DirRX.DCTSIntegration\Module.ru.resx" />
+    <EmbeddedResource Include="DirRX.DCTSIntegration\ModuleSystem.resx" />
+    <EmbeddedResource Include="DirRX.DCTSIntegration\ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformers.mtd" />
+    <EmbeddedResource Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformers.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformers.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformersSystem.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformersSystem.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase\ProcessingRuleDocBase.mtd" />
+    <EmbeddedResource Include="ProcessingRuleDocBase\ProcessingRuleDocBase.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase\ProcessingRuleDocBase.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase\ProcessingRuleDocBaseSystem.resx" />
+    <EmbeddedResource Include="ProcessingRuleDocBase\ProcessingRuleDocBaseSystem.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformers.mtd" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformers.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformers.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformersSystem.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter%40Performers\ProcessingRuleIncomingLetterPerformersSystem.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetter.mtd" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetter.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetter.ru.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterSystem.resx" />
+    <EmbeddedResource Include="ProcessingRuleIncomingLetter\ProcessingRuleIncomingLetterSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProcessingRuleDocBase%40Performers\ProcessingRuleDocBasePerformers.g.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBase.g.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBaseConstants.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBaseHandlers.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBaseSharedFunctions.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBaseStructures.cs" />
+    <None Include="ProcessingRuleDocBase\ProcessingRuleDocBaseStructures.g.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

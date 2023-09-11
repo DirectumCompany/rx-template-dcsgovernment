@@ -1,0 +1,195 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "15db5ebc-a567-4d1a-b9d6-53fedc2030c0",
+  "Name": "DCSGovernmentModule",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "8b517fb6-2e42-4f1a-bb8a-7f80134eb7bf",
+      "Name": "DeleteVersionsByDocumentId",
+      "DelayPeriod": 15,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "3363c933-f2ea-4c3d-a056-814a8a62cc13",
+          "Name": "DocumentId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "752c4084-6ed0-4519-96e9-cf7a804b5420",
+      "Name": "CompleteAssignmentAsync",
+      "DelayPeriod": 15,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "29cfc293-2457-4c3d-ac51-8f9fd6a89ebd",
+          "Name": "Result",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "3e53a7d6-b845-4c34-9b94-1cad07d7e54c",
+          "Name": "AssignmentId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "fa509c54-6ae6-4be5-a8b6-4ff4e12e7de5",
+          "Name": "CompletedById",
+          "ParameterType": "Integer"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "GD.DCSGovernmentModule.Client",
+  "ClientBaseAssemblyName": "GD.DCSGovernmentModule.ClientBase",
+  "ClientBaseNamespace": "GD.DCSGovernmentModule.ClientBase",
+  "ClientNamespace": "GD.DCSGovernmentModule.Client",
+  "Code": "DCSGDMd",
+  "CompanyCode": "GD",
+  "Cover": {
+    "NameGuid": "c30da337-31a0-4fcb-ae8a-0125ee63d1e8",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "bf6c94ab-dbf1-4cbe-a2c6-c081bcfbf558",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "253dd1b1-229d-4416-a746-6cb28360e326",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "25a0577f-66cf-4bdc-bc9a-768ec24e062e",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "80051758-3f3f-4fcc-a772-f10c3c8e5bfd"
+    },
+    {
+      "ItemId": "d574cc38-2354-46fa-85d6-686c525f182b",
+      "PreviousItemId": "80051758-3f3f-4fcc-a772-f10c3c8e5bfd"
+    },
+    {
+      "ItemId": "9a576448-4a40-4dc6-8969-de3c210aec6a",
+      "PreviousItemId": "d574cc38-2354-46fa-85d6-686c525f182b"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "GD.DCSGovernmentModule",
+  "IsolatedAssemblyName": "GD.DCSGovernmentModule.Isolated",
+  "IsolatedNamespace": "GD.DCSGovernmentModule.Isolated",
+  "Libraries": [
+    {
+      "NameGuid": "b9b39a53-d9c3-4eaf-8866-1780a4a300c5",
+      "Name": "ZipFile",
+      "Scope": "Both"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateZipFromFile",
+      "Parameters": [
+        {
+          "Name": "filePath",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetBusinessUnitByEmail",
+      "Parameters": [
+        {
+          "Name": "email",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::Sungero.Company.IBusinessUnit",
+      "ReturnTypeFullName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "GetCompanyByEmail",
+      "Parameters": [
+        {
+          "Name": "email",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::Sungero.Parties.ICompany",
+      "ReturnTypeFullName": "Sungero.Parties.ICompany, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "GetListMail",
+      "Parameters": [
+        {
+          "Name": "file",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetListMailText",
+      "Parameters": [
+        {
+          "Name": "file",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetPersonByEmail",
+      "Parameters": [
+        {
+          "Name": "email",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::Sungero.Parties.IPerson",
+      "ReturnTypeFullName": "Sungero.Parties.IPerson, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "GD.DCSGovernmentModule",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "GD.DCSGovernmentModule.Server",
+  "ServerNamespace": "GD.DCSGovernmentModule.Server",
+  "SharedAssemblyName": "GD.DCSGovernmentModule.Shared",
+  "SharedNamespace": "GD.DCSGovernmentModule.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

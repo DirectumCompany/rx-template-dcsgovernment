@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Enum_Result_Register" xml:space="preserve">
+    <value>Зарегистрировано</value>
+  </data>
+  <data name="Action_RegisterDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Зарегистрировано"</value>
+  </data>
+  <data name="Action_RegisterConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Зарегистрировано"?</value>
+  </data>
+  <data name="Action_Register" xml:space="preserve">
+    <value>Зарегистрировано</value>
+  </data>
+  <data name="Action_RegisterHint" xml:space="preserve">
+    <value>Выполнить с результатом "Зарегистировано"</value>
+  </data>
+  <data name="Property_BusinessUnit" xml:space="preserve">
+    <value>Наша организация</value>
+  </data>
+  <data name="Action_ChangeLeadingDocumentHint" xml:space="preserve">
+    <value>Сменить основной документ</value>
+  </data>
+  <data name="Property_Registrar" xml:space="preserve">
+    <value>Регистратор</value>
+  </data>
+  <data name="Action_ChangeLeadingDocumentDescription" xml:space="preserve">
+    <value>Создать новые версии для выбранных документов</value>
+  </data>
+  <data name="Enum_Result_Decline" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="Action_Decline" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="Action_DeclineHint" xml:space="preserve">
+    <value>Выполнить с результатом "Отказано"</value>
+  </data>
+  <data name="Action_DeclineConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Отказано"?</value>
+  </data>
+  <data name="Action_DeclineDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Отказано"</value>
+  </data>
+  <data name="Enum_Result_ToRegistrar" xml:space="preserve">
+    <value>Перенаправить регистратору</value>
+  </data>
+  <data name="Action_ToRegistrar" xml:space="preserve">
+    <value>Перенаправить регистратору</value>
+  </data>
+  <data name="Action_ToRegistrarHint" xml:space="preserve">
+    <value>Выполнить с результатом "Перенаправить регистратору"</value>
+  </data>
+  <data name="Action_ToRegistrarConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Перенаправить регистратору"?</value>
+  </data>
+  <data name="Action_ToRegistrarDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Перенаправить регистратору"</value>
+  </data>
+  <data name="Enum_Result_ToBusinessUnit" xml:space="preserve">
+    <value>Перенаправить в другую организацию</value>
+  </data>
+  <data name="Action_ToBusinessUnit" xml:space="preserve">
+    <value>Перенаправить в другую организацию</value>
+  </data>
+  <data name="Action_ToBusinessUnitHint" xml:space="preserve">
+    <value>Выполнить с результатом "Перенаправить в другую организацию"</value>
+  </data>
+  <data name="Action_ToBusinessUnitConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Перенаправить в другую организацию"?</value>
+  </data>
+  <data name="Action_ToBusinessUnitDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Перенаправить в другую организацию"</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Задание на регистрацию входящего документа</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Задание на регистрацию входящего документа</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Задания на регистрацию входящего документа</value>
+  </data>
+  <data name="Enum_Result_ToRequest" xml:space="preserve">
+    <value>Преобразовать в обращение</value>
+  </data>
+  <data name="Action_ToRequest" xml:space="preserve">
+    <value>Преобразовать в обращение</value>
+  </data>
+  <data name="Action_ToRequestHint" xml:space="preserve">
+    <value>Выполнить с результатом "Преобразовать в обращение"</value>
+  </data>
+  <data name="Action_ToRequestConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Преобразовать в обращение"?</value>
+  </data>
+  <data name="Action_ToRequestDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Преобразовать в обращение"</value>
+  </data>
+  <data name="Enum_Result_ToLetter" xml:space="preserve">
+    <value>Преобразовать в письмо</value>
+  </data>
+  <data name="Action_ToLetter" xml:space="preserve">
+    <value>Преобразовать в письмо</value>
+  </data>
+  <data name="Action_ToLetterHint" xml:space="preserve">
+    <value>Выполнить с результатом "Преобразовать в письмо"</value>
+  </data>
+  <data name="Action_ToLetterConfirmationMessage" xml:space="preserve">
+    <value>Выполнить задание с результатом "Преобразовать в письмо"?</value>
+  </data>
+  <data name="Action_ToLetterDescription" xml:space="preserve">
+    <value>Выполнение задания с результатом "Преобразовать в письмо"</value>
+  </data>
+  <data name="Ribbon_Attachment_6b992bc86c5147eca3cea78d469c4f40" xml:space="preserve">
+    <value>Вложения</value>
+  </data>
+  <data name="Action_ChangeLeadingDocument" xml:space="preserve">
+    <value>Сменить основной документ</value>
+  </data>
+  <data name="Action_Registration" xml:space="preserve">
+    <value>Зарегистрировать</value>
+  </data>
+  <data name="Action_RegistrationHint" xml:space="preserve">
+    <value>Регистрация документа</value>
+  </data>
+  <data name="Action_RegistrationDescription" xml:space="preserve">
+    <value>Открытие карточки документа для регистрации </value>
+  </data>
+</root>

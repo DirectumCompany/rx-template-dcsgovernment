@@ -1,0 +1,6 @@
+<UserControl x:Class="GD.DCSGovernmentModule.Client.RegistrationAssignmentView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sungero.Workflow.Client;assembly=Sungero.Workflow.Client">
+  <local:WorkflowFormBuilder DataContext="{Binding}"/>
+</UserControl>

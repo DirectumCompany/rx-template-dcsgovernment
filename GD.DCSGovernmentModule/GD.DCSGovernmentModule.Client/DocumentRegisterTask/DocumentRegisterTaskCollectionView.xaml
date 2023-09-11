@@ -1,0 +1,6 @@
+<UserControl x:Class="GD.DCSGovernmentModule.Client.DocumentRegisterTaskCollectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:presentation="clr-namespace:Sungero.Presentation;assembly=Sungero.Presentation">
+  <presentation:FormBuilder x:Name="DocumentRegisterTaskGrid" DataContext="{Binding }"/>
+</UserControl>

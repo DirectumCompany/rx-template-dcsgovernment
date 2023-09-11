@@ -1,0 +1,55 @@
+{
+  "$type": "Sungero.Metadata.LayerModuleMetadata, Sungero.Metadata",
+  "NameGuid": "ead5cbd0-2ebd-4a37-91a1-ec3879648e9c",
+  "Name": "DCTSIntegration",
+  "AssociatedGuid": "25a0577f-66cf-4bdc-bc9a-768ec24e062e",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "2f92bac7-2f80-442d-b2f6-da4ba4d973f9",
+      "Name": "EntryExistingDocument",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "50272d4d-9b46-4bf6-b9f2-9ae298525522",
+          "Name": "TempDocId",
+          "ParameterType": "Integer"
+        }
+      ]
+    }
+  ],
+  "BaseGuid": "d5ac943a-3778-464b-a8b1-a2790e065a76",
+  "ClientBaseAssemblyName": "GD.DCSGovernment.ClientBase",
+  "ClientBaseNamespace": "GD.DCSGovernment.Module.DCTSIntegration.ClientBase",
+  "Code": "DCTSInt",
+  "CompanyCode": "DirRX",
+  "ExplorerTreeOrder": [],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "IsVisible": false,
+  "LayeredFromGuid": "d5ac943a-3778-464b-a8b1-a2790e065a76",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "GD.DCSGovernment.Module.DCTSIntegration",
+  "ResourcesKeys": [
+    "RequestRuleName",
+    "RequestLineToSystem"
+  ],
+  "SpecialFolders": [],
+  "Version": "4.0.4634.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "LayerModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    }
+  ]
+}

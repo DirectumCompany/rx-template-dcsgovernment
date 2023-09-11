@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "25a0577f-66cf-4bdc-bc9a-768ec24e062e",
+  "Name": "DCSGovernment",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "GD.DCSGovernment.Client",
+  "ClientBaseAssemblyName": "GD.DCSGovernment.ClientBase",
+  "ClientBaseNamespace": "GD.DCSGovernment.ClientBase",
+  "ClientNamespace": "GD.DCSGovernment.Client",
+  "Code": "DCSGDSl",
+  "CompanyCode": "GD",
+  "Cover": {
+    "NameGuid": "69f76b80-2278-42ff-8e54-790adf2182c3",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "e4d08560-c81c-4943-811a-9c5ce8b00743",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "c2ee22b1-2c34-42c1-b742-0b40a3880624",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "d0432c80-f060-494d-89dc-bfb89a1d828f",
+      "PreviousItemId": "467fba98-a8ac-4973-8178-1fd5c7b84b23"
+    },
+    {
+      "ItemId": "87a49efc-d63a-4f99-8185-6707d54f760e",
+      "PreviousItemId": "d0432c80-f060-494d-89dc-bfb89a1d828f"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "GD.DCSGovernment",
+  "IsolatedAssemblyName": "GD.DCSGovernment.Isolated",
+  "IsolatedNamespace": "GD.DCSGovernment.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "GD.DCSGovernment",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "GD.DCSGovernment.Server",
+  "ServerNamespace": "GD.DCSGovernment.Server",
+  "SharedAssemblyName": "GD.DCSGovernment.Shared",
+  "SharedNamespace": "GD.DCSGovernment.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

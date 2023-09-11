@@ -1,0 +1,28 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:GD.DCSGovernmentModule.Client">
+
+    <DataTemplate DataType="{x:Type local:DocumentRegisterTaskCollectionPresenter`1}">
+      <local:DocumentRegisterTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentRegisterTaskPresenter`1}">
+        <local:DocumentRegisterTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProcessingRuleRequestCollectionPresenter`1}">
+      <local:ProcessingRuleRequestCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProcessingRuleRequestPresenter`1}">
+        <local:ProcessingRuleRequestView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RegistrationAssignmentCollectionPresenter`1}">
+      <local:RegistrationAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RegistrationAssignmentPresenter`1}">
+        <local:RegistrationAssignmentView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

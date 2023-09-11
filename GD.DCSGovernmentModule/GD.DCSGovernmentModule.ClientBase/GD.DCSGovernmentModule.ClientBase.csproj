@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{34a79db4-1927-8f6e-c6a9-99e227945b4e}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GD.DCSGovernmentModule.ClientBase</RootNamespace>
+    <AssemblyName>GD.DCSGovernmentModule.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DocumentRegisterTask%40Observers\DocumentRegisterTaskObservers.g.cs" />
+    <Compile Include="DocumentRegisterTask\DocumentRegisterTask.g.cs" />
+    <Compile Include="DocumentRegisterTask\DocumentRegisterTaskActions.cs" />
+    <Compile Include="DocumentRegisterTask\DocumentRegisterTaskClientFunctions.cs" />
+    <Compile Include="DocumentRegisterTask\DocumentRegisterTaskHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="ProcessingRuleRequest%40Performers\ProcessingRuleRequestPerformers.g.cs" />
+    <Compile Include="ProcessingRuleRequest\ProcessingRuleRequest.g.cs" />
+    <Compile Include="ProcessingRuleRequest\ProcessingRuleRequestActions.cs" />
+    <Compile Include="ProcessingRuleRequest\ProcessingRuleRequestClientFunctions.cs" />
+    <Compile Include="ProcessingRuleRequest\ProcessingRuleRequestHandlers.cs" />
+    <Compile Include="RegistrationAssignment\RegistrationAssignment.g.cs" />
+    <Compile Include="RegistrationAssignment\RegistrationAssignmentActions.cs" />
+    <Compile Include="RegistrationAssignment\RegistrationAssignmentClientFunctions.cs" />
+    <Compile Include="RegistrationAssignment\RegistrationAssignmentHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+      <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
+      <Name>DirRX.DCTSIntegration.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>..\GD.DCSGovernmentModule.Libraries\ZipFile\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
+      <Project>{8a8afe9e-370d-02cd-d7ab-842f91faf00f}</Project>
+      <Name>DirRX.DCTSIntegration.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\GD.DCSGovernmentModule.Shared\GD.DCSGovernmentModule.Shared.csproj">
+      <Project>{cbea8f69-a3b2-da48-1b04-4748e7a452e2}</Project>
+      <Name>GD.DCSGovernmentModule.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DocumentRegisterTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ProcessingRuleRequest\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="RegistrationAssignment\Generated\DefaultCardView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RegistrationAssignment\Icons\Action_ChangeLeadingDocument_large_711b3185f73e4ddc911556369707b53c.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ChangeLeadingDocument_large_711b3185f73e4ddc911556369707b53c.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ChangeLeadingDocument_small_711b3185f73e4ddc911556369707b53c.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ChangeLeadingDocument_small_711b3185f73e4ddc911556369707b53c.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Decline_large_75cb4f59ceca4dce8bf9470971a597a9.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Decline_large_75cb4f59ceca4dce8bf9470971a597a9.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Decline_small_75cb4f59ceca4dce8bf9470971a597a9.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Decline_small_75cb4f59ceca4dce8bf9470971a597a9.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Register_large_0a8ce76de08349ed94a52f84c7557d3e.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Register_large_0a8ce76de08349ed94a52f84c7557d3e.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Register_small_0a8ce76de08349ed94a52f84c7557d3e.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Register_small_0a8ce76de08349ed94a52f84c7557d3e.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Registration_large_806b71c778554f08beabdaebfcacc129.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Registration_large_806b71c778554f08beabdaebfcacc129.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Registration_small_806b71c778554f08beabdaebfcacc129.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_Registration_small_806b71c778554f08beabdaebfcacc129.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToBusinessUnit_large_389f462bbaa44c629e471ca1cfb6c913.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToBusinessUnit_large_389f462bbaa44c629e471ca1cfb6c913.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToBusinessUnit_small_389f462bbaa44c629e471ca1cfb6c913.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToBusinessUnit_small_389f462bbaa44c629e471ca1cfb6c913.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToLetter_large_08d227216239479d8adcff4055e61f98.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToLetter_large_08d227216239479d8adcff4055e61f98.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToLetter_small_08d227216239479d8adcff4055e61f98.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToLetter_small_08d227216239479d8adcff4055e61f98.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRegistrar_large_9178c88088ff42c18052dbe84ca7a705.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRegistrar_large_9178c88088ff42c18052dbe84ca7a705.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRegistrar_small_9178c88088ff42c18052dbe84ca7a705.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRegistrar_small_9178c88088ff42c18052dbe84ca7a705.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRequest_large_4f1e4c8b04ed40a6ab38d599cc334af3.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRequest_large_4f1e4c8b04ed40a6ab38d599cc334af3.svg" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRequest_small_4f1e4c8b04ed40a6ab38d599cc334af3.png" />
+    <Resource Include="RegistrationAssignment\Icons\Action_ToRequest_small_4f1e4c8b04ed40a6ab38d599cc334af3.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
