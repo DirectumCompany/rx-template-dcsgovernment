@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -147,7 +147,7 @@ namespace GD.DCSGovernmentModule.Server
     /// <param name="id">Id.</param>
     /// <returns>Правило обработки обращения.</returns>
     [Remote]
-    public static IProcessingRuleRequest GetProcessingRule(int id)
+    public static IProcessingRuleRequest GetProcessingRule(long id)
     {
       return ProcessingRuleRequests.GetAll(rule => Equals(rule.Id, id)).FirstOrDefault();
     }

@@ -11,9 +11,9 @@
       "IsHandlerGenerated": true,
       "Parameters": [
         {
-          "NameGuid": "3363c933-f2ea-4c3d-a056-814a8a62cc13",
+          "NameGuid": "19ccc2f6-ea61-432f-b406-791ac16d98fa",
           "Name": "DocumentId",
-          "ParameterType": "Integer"
+          "ParameterType": "LongInteger"
         }
       ]
     },
@@ -25,19 +25,19 @@
       "IsHandlerGenerated": true,
       "Parameters": [
         {
+          "NameGuid": "0cd7fb02-c78e-4f70-821b-f225b85049a2",
+          "Name": "CompletedById",
+          "ParameterType": "LongInteger"
+        },
+        {
           "NameGuid": "29cfc293-2457-4c3d-ac51-8f9fd6a89ebd",
           "Name": "Result",
           "ParameterType": "String"
         },
         {
-          "NameGuid": "3e53a7d6-b845-4c34-9b94-1cad07d7e54c",
+          "NameGuid": "9f610e86-fe35-44d7-b053-434bd8469517",
           "Name": "AssignmentId",
-          "ParameterType": "Integer"
-        },
-        {
-          "NameGuid": "fa509c54-6ae6-4be5-a8b6-4ff4e12e7de5",
-          "Name": "CompletedById",
-          "ParameterType": "Integer"
+          "ParameterType": "LongInteger"
         }
       ]
     }

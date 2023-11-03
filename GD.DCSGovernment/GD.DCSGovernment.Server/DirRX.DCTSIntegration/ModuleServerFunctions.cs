@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using GD.DCSGovernmentModule;
@@ -32,7 +32,7 @@ namespace GD.DCSGovernment.Module.DCTSIntegration.Server
           if (registrar != null)
             clerks.Add(registrar);
         }
-        else if (Requests.Is(document))
+        else if (CitizenRequests.Requests.Is(document))
         {
           var settings = CitizenRequestSettings.GetAll(x => x.Status == Sungero.CoreEntities.DatabookEntry.Status.Active && Equals(x.BusinessUnit, document.BusinessUnit)).FirstOrDefault();
           if (settings != null)
