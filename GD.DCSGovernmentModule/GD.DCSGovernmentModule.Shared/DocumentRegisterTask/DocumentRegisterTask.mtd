@@ -224,7 +224,7 @@
   "Versions": [
     {
       "Type": "TaskMetadata",
-      "Number": 1
+      "Number": 3
     },
     {
       "Type": "WorkflowEntityMetadata",
@@ -232,7 +232,7 @@
     },
     {
       "Type": "EntityMetadata",
-      "Number": 11
+      "Number": 12
     }
   ]
 }

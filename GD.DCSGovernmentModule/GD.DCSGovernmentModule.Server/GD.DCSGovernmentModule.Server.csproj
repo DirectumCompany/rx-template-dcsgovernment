@@ -29,12 +29,68 @@
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>False</Private>
     </ProjectReference>
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sungero.Workflow.Blocks">
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Blocks.dll</HintPath>
       <Private>False</Private>
@@ -47,68 +103,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="PresentationCore" />
-    <Reference Include="WindowsBase" />
-    <Reference Include="System.Transactions" />
-    <Reference Include="CommonLibrary">
-      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Declension">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Dialogs">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Localization">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Exceptions">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Reflection">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Metadata">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Abstractions">
       <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sungero.Domain.Shared">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.CoreEntities.Shared">
-      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Security">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Domain">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.CoreEntities.Server">
-      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Agent.Jobs">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Agent.AsyncHandlers">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.IO.Compression.ZipFile">
       <HintPath>..\GD.DCSGovernmentModule.Libraries\ZipFile\System.IO.Compression.ZipFile.dll</HintPath>
       <Private>False</Private>
@@ -137,7 +137,7 @@
       <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Server\DirRX.DCTSIntegration.Server.csproj">
+    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Server\DirRX.DCTSIntegration.Server.csproj">
       <Project>{e6d002ea-5293-349d-9e95-0e6693764190}</Project>
       <Name>DirRX.DCTSIntegration.Server</Name>
       <Private>false</Private>

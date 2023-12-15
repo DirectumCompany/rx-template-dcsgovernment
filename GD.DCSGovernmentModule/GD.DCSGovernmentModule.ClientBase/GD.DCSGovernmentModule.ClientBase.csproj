@@ -48,23 +48,26 @@
     <Compile Include="RegistrationAssignment\RegistrationAssignmentHandlers.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>False</Private>
     </ProjectReference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Runtime" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="WindowsBase" />
     <Reference Include="CommonLibrary">
       <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sungero.Declension">
@@ -75,48 +78,45 @@
       <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sungero.Localization">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Exceptions">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Reflection">
-      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
-      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sungero.Metadata">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Abstractions">
-      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sungero.Domain.Shared">
       <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sungero.CoreEntities.Shared">
-      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sungero.Domain.ClientBase">
-      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sungero.CoreEntities.ClientBase">
-      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="netstandard">
-      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
@@ -147,7 +147,7 @@
       <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
       <Project>{8a8afe9e-370d-02cd-d7ab-842f91faf00f}</Project>
       <Name>DirRX.DCTSIntegration.ClientBase</Name>
       <Private>false</Private>

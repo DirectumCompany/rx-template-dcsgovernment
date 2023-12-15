@@ -9,8 +9,11 @@
     ".NETStandard,Version=v2.0/": {
       "GD.DCSGovernment.ClientBase/1.0.0": {
         "dependencies": {
+          "DirRX.DCTSIntegration.ClientBase": "1.0.0",
+          "DirRX.DCTSIntegration.Shared": "1.0.0",
           "GD.DCSGovernment.Shared": "1.0.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "Sungero.Domain.Interfaces": "1.0.0"
         },
         "runtime": {
           "GD.DCSGovernment.ClientBase.dll": {}
