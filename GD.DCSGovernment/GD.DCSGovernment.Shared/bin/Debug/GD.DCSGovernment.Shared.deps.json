@@ -9,7 +9,9 @@
     ".NETStandard,Version=v2.0/": {
       "GD.DCSGovernment.Shared/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.3"
+          "DirRX.DCTSIntegration.Shared": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "Sungero.Domain.Interfaces": "1.0.0"
         },
         "runtime": {
           "GD.DCSGovernment.Shared.dll": {}

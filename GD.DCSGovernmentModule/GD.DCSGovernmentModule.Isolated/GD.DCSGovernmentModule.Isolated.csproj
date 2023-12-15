@@ -29,21 +29,6 @@
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Runtime" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="Sungero.IsolatedArea.Extensions">
-      <HintPath>..\..\..\.sds\Libraries\IsolatedArea\Sungero.IsolatedArea.Extensions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\.sds\Libraries\3dParty\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Aspose.BarCode">
       <HintPath>..\..\..\.sds\Libraries\3dParty\Aspose.BarCode.dll</HintPath>
       <Private>False</Private>
@@ -80,11 +65,26 @@
       <HintPath>..\..\..\.sds\Libraries\3dParty\Aspose.Words.Shaping.HarfBuzz.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.IsolatedArea.Extensions">
+      <HintPath>..\..\..\.sds\Libraries\IsolatedArea\Sungero.IsolatedArea.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.IO.Compression.ZipFile">
       <HintPath>..\GD.DCSGovernmentModule.Libraries\ZipFile\System.IO.Compression.ZipFile.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\BaseDcs\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Isolated\DirRX.DCTSIntegration.Isolated.csproj">
+    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Isolated\DirRX.DCTSIntegration.Isolated.csproj">
       <Project>{44b5ba9e-83db-ee29-a6ca-97bf813143a0}</Project>
       <Name>DirRX.DCTSIntegration.Isolated</Name>
       <Private>false</Private>
