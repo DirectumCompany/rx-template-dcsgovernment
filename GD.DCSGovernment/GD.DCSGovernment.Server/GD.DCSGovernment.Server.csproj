@@ -29,7 +29,7 @@
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>False</Private>
@@ -129,13 +129,21 @@
       <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Server\DirRX.DCTSIntegration.Server.csproj">
+    <Reference Include="Sungero.NoCode.Server">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Server\DirRX.DCTSIntegration.Server.csproj">
       <Project>{e6d002ea-5293-349d-9e95-0e6693764190}</Project>
       <Name>DirRX.DCTSIntegration.Server</Name>
       <Private>false</Private>
     </ProjectReference>
     <Reference Include="Sungero.Workflow.Shared">
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.NoCode.Shared">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

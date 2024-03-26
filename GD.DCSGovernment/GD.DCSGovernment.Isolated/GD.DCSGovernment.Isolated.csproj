@@ -80,7 +80,7 @@
     <Reference Include="System.Runtime" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Isolated\DirRX.DCTSIntegration.Isolated.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Isolated\DirRX.DCTSIntegration.Isolated.csproj">
       <Project>{44b5ba9e-83db-ee29-a6ca-97bf813143a0}</Project>
       <Name>DirRX.DCTSIntegration.Isolated</Name>
       <Private>false</Private>

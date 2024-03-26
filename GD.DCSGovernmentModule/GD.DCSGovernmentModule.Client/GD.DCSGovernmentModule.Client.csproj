@@ -61,7 +61,7 @@
     <Page Include="RegistrationAssignment\RegistrationAssignmentView.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>False</Private>
@@ -167,6 +167,10 @@
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sungero.NoCode.Client">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sungero.Content.Client">
       <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Client.dll</HintPath>
       <Private>False</Private>
@@ -187,6 +191,10 @@
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sungero.NoCode.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sungero.Content.ClientBase">
       <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
       <Private>False</Private>
@@ -200,52 +208,52 @@
       <Name>GD.DCSGovernment.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
       <Project>{8a8afe9e-370d-02cd-d7ab-842f91faf00f}</Project>
       <Name>DirRX.DCTSIntegration.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.RecordManagement\Sungero.RecordManagement.ClientBase\Sungero.RecordManagement.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.RecordManagement\Sungero.RecordManagement.ClientBase\Sungero.RecordManagement.ClientBase.csproj">
       <Project>{c415cdcf-6766-d4ca-2067-dc2043937c87}</Project>
       <Name>Sungero.RecordManagement.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.CitizenRequests\GD.CitizenRequests.ClientBase\GD.CitizenRequests.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.CitizenRequests\GD.CitizenRequests.ClientBase\GD.CitizenRequests.ClientBase.csproj">
       <Project>{dd092989-d9e3-82e5-1d1f-87f3bec2350e}</Project>
       <Name>GD.CitizenRequests.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Company\Sungero.Company.ClientBase\Sungero.Company.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Company\Sungero.Company.ClientBase\Sungero.Company.ClientBase.csproj">
       <Project>{39d743bb-a69f-1df6-1611-bae0b605b22d}</Project>
       <Name>Sungero.Company.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
       <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
       <Name>Sungero.Docflow.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Parties\Sungero.Parties.ClientBase\Sungero.Parties.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Parties\Sungero.Parties.ClientBase\Sungero.Parties.ClientBase.csproj">
       <Project>{20ce99b8-f3ec-a3fc-3014-f9a2fb33c6ca}</Project>
       <Name>Sungero.Parties.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSKit\DirRX.DCTSKit.ClientBase\DirRX.DCTSKit.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSKit\DirRX.DCTSKit.ClientBase\DirRX.DCTSKit.ClientBase.csproj">
       <Project>{e02ccc08-5264-5edc-2478-366afd6a2143}</Project>
       <Name>DirRX.DCTSKit.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Contracts\Sungero.Contracts.ClientBase\Sungero.Contracts.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Contracts\Sungero.Contracts.ClientBase\Sungero.Contracts.ClientBase.csproj">
       <Project>{8ab9e5d0-df57-c7d4-c402-cc0c1142a4a1}</Project>
       <Name>Sungero.Contracts.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
       <Project>{d53ca45d-7343-e40a-a6c2-90a5f7c85244}</Project>
       <Name>Sungero.DirectumRX.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Intelligence\Sungero.Intelligence.ClientBase\Sungero.Intelligence.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Intelligence\Sungero.Intelligence.ClientBase\Sungero.Intelligence.ClientBase.csproj">
       <Project>{48fb374c-fe86-534d-6aa9-5b3f9e6cd150}</Project>
       <Name>Sungero.Intelligence.ClientBase</Name>
       <Private>false</Private>
@@ -255,68 +263,72 @@
       <Name>GD.Overrides.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.GovernmentSolution\GD.GovernmentSolution.ClientBase\GD.GovernmentSolution.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.GovernmentSolution\GD.GovernmentSolution.ClientBase\GD.GovernmentSolution.ClientBase.csproj">
       <Project>{d511f0f2-7894-f80b-7277-33116c00af68}</Project>
       <Name>GD.GovernmentSolution.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
       <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
       <Name>Sungero.ExchangeCore.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.ConnectorPOS\GD.ConnectorPOS.ClientBase\GD.ConnectorPOS.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.ConnectorPOS\GD.ConnectorPOS.ClientBase\GD.ConnectorPOS.ClientBase.csproj">
       <Project>{a3636ece-eca4-d3e5-1a7a-eb2e900f158d}</Project>
       <Name>GD.ConnectorPOS.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.ConnectorSSTU\GD.ConnectorSSTU.ClientBase\GD.ConnectorSSTU.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.ConnectorSSTU\GD.ConnectorSSTU.ClientBase\GD.ConnectorSSTU.ClientBase.csproj">
       <Project>{12558332-cdc0-974f-bc9a-3fc74fc613a3}</Project>
       <Name>GD.ConnectorSSTU.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.MEDO\GD.MEDO.ClientBase\GD.MEDO.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.MEDO\GD.MEDO.ClientBase\GD.MEDO.ClientBase.csproj">
       <Project>{ecdf79b8-fe97-1ea3-0eba-4fdb8786d373}</Project>
       <Name>GD.MEDO.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\TR\src\Packages\GD.GovernmentCommons\GD.GovernmentCommons.ClientBase\GD.GovernmentCommons.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\GovernmentStSol\src\Packages\GD.GovernmentCommons\GD.GovernmentCommons.ClientBase\GD.GovernmentCommons.ClientBase.csproj">
       <Project>{7e348a42-e969-8b85-96c8-b31275a49834}</Project>
       <Name>GD.GovernmentCommons.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Commons\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Commons\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
       <Project>{9bf82d81-01c3-cf3a-a65d-f6aebeccb848}</Project>
       <Name>Sungero.Commons.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.PowerOfAttorneyCore\Sungero.PowerOfAttorneyCore.ClientBase\Sungero.PowerOfAttorneyCore.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.PowerOfAttorneyCore\Sungero.PowerOfAttorneyCore.ClientBase\Sungero.PowerOfAttorneyCore.ClientBase.csproj">
       <Project>{d47f3ab9-ae86-56e4-f641-7e17fa92057e}</Project>
       <Name>Sungero.PowerOfAttorneyCore.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Projects\Sungero.Projects.ClientBase\Sungero.Projects.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Projects\Sungero.Projects.ClientBase\Sungero.Projects.ClientBase.csproj">
       <Project>{189f3bd9-a58f-11b5-3b8a-f57d5cd8d540}</Project>
       <Name>Sungero.Projects.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.RecordManagementUI\Sungero.RecordManagementUI.ClientBase\Sungero.RecordManagementUI.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.RecordManagementUI\Sungero.RecordManagementUI.ClientBase\Sungero.RecordManagementUI.ClientBase.csproj">
       <Project>{edbdf539-899b-52bf-b39d-ba3e2ea7b95b}</Project>
       <Name>Sungero.RecordManagementUI.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Base\Sungero.Shell\Sungero.Shell.ClientBase\Sungero.Shell.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\base\Sungero.Shell\Sungero.Shell.ClientBase\Sungero.Shell.ClientBase.csproj">
       <Project>{8fdcfa79-dcbe-89f3-deec-a20e780a0fba}</Project>
       <Name>Sungero.Shell.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Client\DirRX.DCTSIntegration.Client.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Client\DirRX.DCTSIntegration.Client.csproj">
       <Project>{fc282067-71fc-ba49-c217-670e72d69b4d}</Project>
       <Name>DirRX.DCTSIntegration.Client</Name>
       <Private>false</Private>
     </ProjectReference>
     <Reference Include="Sungero.Workflow.Shared">
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.NoCode.Shared">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

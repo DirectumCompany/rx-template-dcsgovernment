@@ -121,6 +121,10 @@
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sungero.NoCode.Shared">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sungero.Content.Shared">
       <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
       <Private>False</Private>
@@ -129,7 +133,7 @@
       <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>false</Private>

@@ -32,6 +32,11 @@ namespace GD.DCSGovernmentModule.Server
         return base.ApplyAppliedFilter(query);
       }
 
+      protected override global::System.Linq.IQueryable<T> ApplyAppliedPreFilter(global::System.Linq.IQueryable<T> query)
+      {
+        return base.ApplyAppliedPreFilter(query);
+      }
+
       public RegistrationAssignmentFilter(global::GD.DCSGovernmentModule.IRegistrationAssignmentFilterState filter)
       : base()
       {
