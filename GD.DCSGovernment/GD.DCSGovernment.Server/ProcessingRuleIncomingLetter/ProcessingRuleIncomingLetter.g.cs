@@ -30,6 +30,11 @@ namespace GD.DCSGovernment.Server
         return base.ApplyAppliedFilter(query);
       }
 
+      protected override global::System.Linq.IQueryable<T> ApplyAppliedPreFilter(global::System.Linq.IQueryable<T> query)
+      {
+        return base.ApplyAppliedPreFilter(query);
+      }
+
       public ProcessingRuleIncomingLetterFilter(global::GD.DCSGovernment.IProcessingRuleIncomingLetterFilterState filter)
       : base(filter)
       {

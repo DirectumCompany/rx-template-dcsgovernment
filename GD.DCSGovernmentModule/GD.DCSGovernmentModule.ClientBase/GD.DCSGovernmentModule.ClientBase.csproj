@@ -48,7 +48,7 @@
     <Compile Include="RegistrationAssignment\RegistrationAssignmentHandlers.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.Shared\DirRX.DCTSIntegration.Shared.csproj">
       <Project>{890abbb7-0980-a6f5-0073-f6231bd926e0}</Project>
       <Name>DirRX.DCTSIntegration.Shared</Name>
       <Private>False</Private>
@@ -131,6 +131,10 @@
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sungero.NoCode.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sungero.Content.ClientBase">
       <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
       <Private>False</Private>
@@ -147,13 +151,17 @@
       <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <ProjectReference Include="..\..\..\DCTSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
+    <ProjectReference Include="..\..\..\DCSKitBase\DirRX.DCTSIntegration\DirRX.DCTSIntegration.ClientBase\DirRX.DCTSIntegration.ClientBase.csproj">
       <Project>{8a8afe9e-370d-02cd-d7ab-842f91faf00f}</Project>
       <Name>DirRX.DCTSIntegration.ClientBase</Name>
       <Private>false</Private>
     </ProjectReference>
     <Reference Include="Sungero.Workflow.Shared">
       <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.NoCode.Shared">
+      <HintPath>..\..\..\.sds\Libraries\NoCode\Sungero.NoCode.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

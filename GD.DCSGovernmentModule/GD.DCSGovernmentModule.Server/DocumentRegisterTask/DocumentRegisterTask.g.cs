@@ -32,6 +32,11 @@ namespace GD.DCSGovernmentModule.Server
         return base.ApplyAppliedFilter(query);
       }
 
+      protected override global::System.Linq.IQueryable<T> ApplyAppliedPreFilter(global::System.Linq.IQueryable<T> query)
+      {
+        return base.ApplyAppliedPreFilter(query);
+      }
+
       public DocumentRegisterTaskFilter(global::GD.DCSGovernmentModule.IDocumentRegisterTaskFilterState filter)
       : base()
       {
@@ -1305,8 +1310,33 @@ namespace GD.DCSGovernmentModule.Server
 
 namespace GD.DCSGovernmentModule.Server.DocumentRegisterTaskBlocks
 {
+  public class RegistrationAssignmentBlockOutProperties
+  {
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+    protected global::Sungero.Workflow.Blocks.AssignmentBlockWrapper<global::Sungero.Workflow.AssignmentBlock> Block { get; set; }
+
+    public RegistrationAssignmentBlockOutProperties(RegistrationAssignmentBlock block) 
+    {
+      this.Block = block;
+    }
+  }
+
   public partial class RegistrationAssignmentBlock :  global::Sungero.Workflow.Blocks.AssignmentBlockWrapper<global::Sungero.Workflow.AssignmentBlock> {
-    public RegistrationAssignmentBlock(global::Sungero.Workflow.AssignmentBlock block) : base(block) { }
+    [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+    private global::GD.DCSGovernmentModule.Server.DocumentRegisterTaskBlocks.RegistrationAssignmentBlockOutProperties _outProps;
+
+    /// <summary>
+    /// Output properties.
+    /// </summary>
+    public  global::GD.DCSGovernmentModule.Server.DocumentRegisterTaskBlocks.RegistrationAssignmentBlockOutProperties OutProperties
+    {
+      get { return (global::GD.DCSGovernmentModule.Server.DocumentRegisterTaskBlocks.RegistrationAssignmentBlockOutProperties)this._outProps; }
+    }
+
+    public RegistrationAssignmentBlock(global::Sungero.Workflow.AssignmentBlock block) : base(block)
+    {
+      this._outProps = new RegistrationAssignmentBlockOutProperties(this);
+    }
   }
 
   public partial class RegistrationAssignmentBlockHandlers 
