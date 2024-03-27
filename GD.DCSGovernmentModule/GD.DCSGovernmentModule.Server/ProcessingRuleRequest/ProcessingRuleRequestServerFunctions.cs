@@ -102,7 +102,7 @@ namespace GD.DCSGovernmentModule.Server
         
         using (var stream = new System.IO.MemoryStream())
         {
-          var file = Convert.FromBase64String(files.First().Key);
+          var file = Convert.FromBase64String(files.First().Key.Split(';')[0]);
           stream.Write(file, 0, file.Length);
           doc.CreateVersionFrom(stream, Path.GetExtension(files.First().Value));
         }

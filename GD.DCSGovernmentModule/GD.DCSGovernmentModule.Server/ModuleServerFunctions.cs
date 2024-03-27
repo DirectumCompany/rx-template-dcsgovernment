@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
@@ -122,7 +122,7 @@ namespace GD.DCSGovernmentModule.Server
       var content = string.Empty;
       try
       {
-        file = file.Remove(0, 36);
+        file = file.Split(';')[0];
         using (var ms = new MemoryStream(Convert.FromBase64String(file)))
         {
           using (StreamReader sr = new StreamReader(ms))
@@ -155,7 +155,7 @@ namespace GD.DCSGovernmentModule.Server
       var content = string.Empty;
       try
       {
-        file = file.Remove(0, 36);
+        file = file.Split(';')[0];
         content = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(file));
         content = Regex.Replace(content, @"^\s+$[\r\n]*", "", RegexOptions.Multiline);
         content = content.Replace("&nbsp;", string.Empty);

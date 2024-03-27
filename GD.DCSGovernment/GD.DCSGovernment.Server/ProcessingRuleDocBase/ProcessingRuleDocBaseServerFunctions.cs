@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -60,7 +60,7 @@ namespace GD.DCSGovernment.Server
         {
           using (var stream = new System.IO.MemoryStream())
           {
-            var file = Convert.FromBase64String(key.Key);
+            var file = Convert.FromBase64String(key.Key.Split(';')[0]);
             stream.Write(file, 0, file.Length);
             addendum.CreateVersionFrom(stream, extension);
           }
