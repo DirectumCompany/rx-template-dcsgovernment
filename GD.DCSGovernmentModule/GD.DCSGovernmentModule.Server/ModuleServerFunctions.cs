@@ -310,12 +310,13 @@ namespace GD.DCSGovernmentModule.Server
     /// <param name="receiverDocument">Документ-приемник.</param>
     public static void CopyDocumentRelations(Sungero.Docflow.IOfficialDocument sourceDocument, Sungero.Docflow.IOfficialDocument receiverDocument)
     {
-      var relatedDocuments = sourceDocument.Relations.GetRelated().Union(sourceDocument.Relations.GetRelatedFrom()).Where(d => d.HasVersions);
+      var relatedDocuments = sourceDocument.Relations.GetRelatedAndRelatedFromDocuments(Sungero.Docflow.PublicConstants.Module.AddendumRelationName).Where(d => d.HasVersions);
       foreach (var doc in relatedDocuments)
       {
-        receiverDocument.Relations.Add(Sungero.Docflow.PublicConstants.Module.AddendumRelationName, doc);
         if (Sungero.Docflow.Addendums.Is(doc))
           Sungero.Docflow.Addendums.As(doc).LeadingDocument = receiverDocument;
+        else          
+          receiverDocument.Relations.Add(Sungero.Docflow.PublicConstants.Module.AddendumRelationName, doc);
       }
     }
     
