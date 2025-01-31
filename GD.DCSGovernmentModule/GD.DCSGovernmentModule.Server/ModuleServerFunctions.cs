@@ -310,7 +310,7 @@ namespace GD.DCSGovernmentModule.Server
     /// <param name="receiverDocument">Документ-приемник.</param>
     public static void CopyDocumentRelations(Sungero.Docflow.IOfficialDocument sourceDocument, Sungero.Docflow.IOfficialDocument receiverDocument)
     {
-      var relatedDocuments = sourceDocument.Relations.GetRelated().Union(sourceDocument.Relations.GetRelatedFrom()).Where(d => d.HasVersions);
+      var relatedDocuments = sourceDocument.Relations.GetRelatedAndRelatedFromDocuments().Where(d => d.HasVersions);
       foreach (var doc in relatedDocuments)
       {
         receiverDocument.Relations.Add(Sungero.Docflow.PublicConstants.Module.AddendumRelationName, doc);
@@ -353,7 +353,7 @@ namespace GD.DCSGovernmentModule.Server
       document.LifeCycleState = Sungero.Docflow.OfficialDocument.LifeCycleState.Obsolete;
       if (document.HasRelations)
       {
-        var relatedDocuments = document.Relations.GetRelated();
+        var relatedDocuments = document.Relations.GetRelatedDocuments();
         foreach (var relatedDocument in relatedDocuments)
         {
           foreach(var typeRelation in typeRelations)
