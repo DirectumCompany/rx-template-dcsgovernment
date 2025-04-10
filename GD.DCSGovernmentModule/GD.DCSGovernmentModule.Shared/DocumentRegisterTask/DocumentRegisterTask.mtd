@@ -37,7 +37,8 @@
         "RegistrationAssignmentBlockCompleteAssignment",
         "RegistrationAssignmentBlockEnd",
         "RegistrationAssignmentBlockStart"
-      ]
+      ],
+      "ProcessStagesDisplayMode": "Show"
     }
   ],
   "CanBeNavigationPropertyType": true,
@@ -231,7 +232,7 @@
     },
     {
       "Type": "EntityMetadata",
-      "Number": 12
+      "Number": 13
     }
   ]
 }
